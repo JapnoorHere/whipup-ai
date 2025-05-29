@@ -26,6 +26,7 @@ import {
 } from '../store/recipeSlice';
 import { showLoader, hideLoader } from '../store/loaderSlice';
 import { requestRecipeModification } from '../services/apiService';
+import AiIcon from '../assets/ai-icon.png'
 
 const IngredientsPage = () => {
   const navigate = useNavigate();
@@ -157,10 +158,10 @@ const IngredientsPage = () => {
 
         <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-3 sm:p-4 mb-6 sm:mb-8">
           <div className="flex items-start space-x-3">
-            <GiArtificialIntelligence className="text-blue-400 text-xl sm:text-2xl flex-shrink-0 mt-1" />
+            <img src={AiIcon} className="text-blue-400 w-8 h-8 text-xl sm:text-2xl flex-shrink-0 mt-1" />
             <div>
               <h3 className="text-blue-400 font-semibold mb-2 flex items-center text-sm sm:text-base">
-                <MdInfo className="mr-2" /> AI Generated Content Notice
+                AI Generated Content Notice
               </h3>
               <p className="text-white/80 text-xs sm:text-sm leading-relaxed">
                 Ingredient images are AI-generated and for reference. Rely on
@@ -242,9 +243,9 @@ const IngredientsPage = () => {
                           .join(' ')}
                       </div>
                     )}
-                    <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-blue-500 rounded-full flex items-center justify-center">
+                    {/* <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-blue-500 rounded-full flex items-center justify-center">
                       <GiArtificialIntelligence className="text-white text-xs" />
-                    </div>
+                    </div> */}
                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                       <div className="w-2 h-2 bg-white rounded-full" />
                     </div>
