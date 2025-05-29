@@ -4,13 +4,13 @@
 
 Check it out here: https://whipup-ai.vercel.app/
 
-WhipUp AI is a modern, AI-powered web application designed to be your personal culinary assistant. Describe any dish or food idea, and WhipUp AI leverages the power of Google's Gemini AI to generate detailed, easy-to-follow recipes in multiple languages (English, Hindi, and Punjabi). Complete with dynamic ingredient visuals from Pollinations AI, interactive cooking steps, and customization options, WhipUp AI aims to make home cooking more accessible, creative, and enjoyable for everyone.
+WhipUp AI is a modern, AI-powered web application designed to be your personal culinary assistant. Describe any dish or food idea, and WhipUp AI leverages the power of Google's Gemini AI to generate detailed, easy-to-follow recipes in multiple languages (English, Hindi, and Punjabi). Complete with dynamic ingredient visuals from Gemini 2.0 Flash, interactive cooking steps, and customization options, WhipUp AI aims to make home cooking more accessible, creative, and enjoyable for everyone.
 
 ## ✨ Features
 
 *   **AI-Powered Recipe Generation:** Utilizes Google Gemini (via API) to generate comprehensive recipes based on user input including dish name, description, diet, cuisine, and more.
 *   **Multilingual Support:** Get recipes in English, Hindi (Devanagari script), and Punjabi (Gurmukhi script). Easily switch languages on the fly.
-*   **Dynamic Ingredient Images:** Visual representation for each ingredient using Pollinations AI, making your shopping list and prep work clearer.
+*   **Dynamic Ingredient Images:** Visual representation for each ingredient using Gemini 2.0 Flash, making your shopping list and prep work clearer.
 *   **Extreme Step-by-Step Detail:** AI is prompted to break down instructions into the smallest, most logical actions, perfect for beginner cooks.
 *   **Interactive Cooking Mode:** Follow recipes step-by-step with built-in timers for timed instructions and a clear display of ingredients used per step.
 *   **Recipe Customization:** Request modifications to an existing AI-generated recipe (e.g., "make it spicier," "replace chicken with tofu").
@@ -26,7 +26,7 @@ WhipUp AI is a modern, AI-powered web application designed to be your personal c
 *   **Styling:** Tailwind CSS
 *   **State Management:** Redux Toolkit
 *   **AI (Recipe Generation):** Google Gemini API (e.g., `gemini-2.0-flash-lite`)
-*   **AI (Image Generation):** Pollinations.ai
+*   **AI (Image Generation):** Gemini 2.0 Flash
 *   **Form Handling (Bug Report):** Formspree
 
 ## Screenshots
