@@ -135,7 +135,7 @@ const StepsPage = () => {
       setCurrentStep(0);
       setCompletedSteps(new Set());
     } catch (error) {
-      console.error('Error modifying recipe:', error);
+      
       if (error.message === 'DIET_MISMATCH_MODIFICATION') {
         toast.error(
           'The requested change creates a diet mismatch.',

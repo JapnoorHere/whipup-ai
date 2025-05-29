@@ -73,7 +73,6 @@ const RecipeModal = ({ isOpen, onClose, recipeData, onSubmit }) => {
       restrictions: formData.restrictions.trim() || 'None',
       description: formData.description.trim() || '',
     };
-    console.log('Submitting form data to API:', finalData);
     onSubmit(finalData);
     onClose();
   };

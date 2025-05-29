@@ -70,7 +70,7 @@ const IngredientsPage = () => {
       dispatch(setRecipe(modifiedRecipe));
       toast.success('Recipe updated successfully!');
     } catch (error) {
-      console.error('Error modifying recipe:', error);
+      
       if (error.message === 'DIET_MISMATCH_MODIFICATION') {
         toast.error(
           'The requested change creates a diet mismatch. Please try a different modification.',

@@ -78,7 +78,7 @@ const HomePage = () => {
     };
 
     const handleModalSubmit = async (formDataFromModal) => {
-        console.log('Form data received from modal for API call:', formDataFromModal);
+        
         if (!formDataFromModal.recipeName || formDataFromModal.recipeName.trim().length === 0) {
             toast.error("Recipe name is required in the modal.");
             return;
@@ -91,7 +91,7 @@ const HomePage = () => {
         try {
             const generatedRecipeData = await generateRecipe(formDataFromModal);
             if (!generatedRecipeData?.recipeName?.en || !generatedRecipeData.ingredients || !generatedRecipeData.steps) {
-                console.error("HomePage validation: Invalid recipe data structure from AI post-API call.", generatedRecipeData);
+                
                 throw new Error('Received incomplete recipe data from AI.');
             }
             dispatch(setRecipe(generatedRecipeData));
@@ -101,7 +101,7 @@ const HomePage = () => {
             toast.success(`Recipe for "${recipeNameForToast}" generated!`);
             setTimeout(() => navigate('/ingredients'), 100);
         } catch (error) {
-            console.error('Recipe generation error in HomePage:', error.message, error);
+            
             if (error.message === "DIET_MISMATCH") {
                 const userEnteredRecipeName = formDataFromModal.recipeName;
                 const selectedDiet = formDataFromModal.diet;
