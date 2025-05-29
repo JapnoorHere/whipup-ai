@@ -324,7 +324,7 @@ Ensure the image prompts for ingredients are descriptive.
       throw error;
     }
     throw new Error(
-      'Failed to generate recipe. The AI chef might be busy or the request was unusual. Please try rephrasing.'
+      'Failed to generate recipe. Please try rephrasing.'
     );
   }
 };
@@ -436,7 +436,7 @@ ERROR FORMAT for unfulfillable modifications or diet issues: {"message": "Modifi
       throw error;
     }
     throw new Error(
-      'Failed to modify recipe. The AI might be busy or the request was unusual. Please try rephrasing.'
+      'Failed to modify recipe. Please try rephrasing.'
     );
   }
 };

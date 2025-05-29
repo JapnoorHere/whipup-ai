@@ -49,7 +49,7 @@ const Loader = ({ showMessages = false }) => {
                     options={defaultOptions}
                     height={200}
                     width={200}
-                    className="opacity-90"
+                    
                 />
                 {showMessages && (
                     <p className="m-4 text-lg text-white font-semibold animate-pulse text-center max-w-md">
